@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SideBar from "./components/header/SideBar";
 import Header from "./components/header/Header";
 import VideoSection from "./components/video/VideoSection";
+import FilterSection from "./components/video/FilterSection";
 
 function App() {
   const [isFulSidebar, setIsFulSidebar] = useState(true);
@@ -14,8 +15,9 @@ function App() {
         <main
           className={`flex-1 ${
             isFulSidebar ? "ml-[15%]" : "ml-[4%]"
-          } transition-all duration-300 overflow-y-scroll`}
+          } transition-all duration-300 overflow-y-scroll h-[90%] mt-auto scroller`}
         >
+          <FilterSection />
           <VideoSection />
         </main>
       </div>

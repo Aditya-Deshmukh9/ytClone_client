@@ -3,12 +3,10 @@ import { BsDot } from "react-icons/bs";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { formatDistanceToNow } from "date-fns";
 import { videos } from "../../utils/constant";
-import FilterSection from "./FilterSection";
 
 const VideoSection = () => {
   return (
-    <section className="w-full px-4 py-4">
-      <FilterSection />
+    <section className="w-full px-4 py-2">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {videos.map((video) => (
           <div

@@ -1,6 +1,17 @@
-import { IoHomeOutline } from "react-icons/io5";
-import { MdOutlineSubscriptions } from "react-icons/md";
+import { IoCut, IoHomeOutline } from "react-icons/io5";
+import {
+  MdHistory,
+  MdOutlineFeedback,
+  MdOutlinePlaylistPlay,
+  MdOutlineSubscriptions,
+  MdOutlineWatchLater,
+} from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { BiSolidVideos } from "react-icons/bi";
+import { AiFillLike } from "react-icons/ai";
+import { CiSettings } from "react-icons/ci";
+import { FaFlag } from "react-icons/fa";
+import { FiHelpCircle } from "react-icons/fi";
 
 export const filters = [
   { text: "All", href: "/" },
@@ -197,5 +208,61 @@ export const mainNavLinks = [
     icon: CgProfile,
     href: "/you",
     text: "You",
+  },
+];
+
+export const youNavLinks = [
+  {
+    icon: MdHistory,
+    href: "/",
+    text: "History",
+  },
+  {
+    icon: MdOutlinePlaylistPlay,
+    href: "/",
+    text: "Playlists",
+  },
+  {
+    icon: BiSolidVideos,
+    href: "/",
+    text: "Your videos",
+  },
+  {
+    icon: MdOutlineWatchLater,
+    href: "/",
+    text: "Watch Later",
+  },
+  {
+    icon: AiFillLike,
+    href: "/",
+    text: "Liked",
+  },
+  {
+    icon: IoCut,
+    href: "/",
+    text: "Your Clips",
+  },
+];
+
+export const EndNavLinks = [
+  {
+    icon: CiSettings,
+    href: "/",
+    text: "Settings",
+  },
+  {
+    icon: FaFlag,
+    href: "/",
+    text: "Your history",
+  },
+  {
+    icon: FiHelpCircle,
+    href: "/",
+    text: "Help",
+  },
+  {
+    icon: MdOutlineFeedback,
+    href: "/",
+    text: "Send feedback",
   },
 ];

@@ -38,7 +38,7 @@ function FilterSection() {
   };
 
   return (
-    <div className="relative w-full bg-[#0f0f0f] py-3 border-b border-[#272727]">
+    <div className="fixed top-12 w-full bg-black z-50 py-3 border-b border-[#272727]">
       {showLeftArrow && (
         <button
           onClick={() => scroll("left")}
