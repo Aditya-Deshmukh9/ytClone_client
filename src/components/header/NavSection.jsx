@@ -11,7 +11,7 @@ function NavSection({ links, isFulSidebar }) {
           <li
             key={item.text}
             className={`w-full rounded-lg hover:bg-[#272727] transition-colors ${
-              isFulSidebar ? "flex gap-2 pl-3" : "flex justify-center"
+              isFulSidebar ? "flex gap-2 md:pl-3" : "flex justify-center"
             }`}
           >
             <Link

@@ -6,14 +6,14 @@ import { videos } from "../../utils/constant";
 
 const VideoSection = () => {
   return (
-    <section className="w-full px-4 py-2">
+    <section className="w-full px-4 py-1">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {videos.map((video) => (
+        {videos.map((video, index) => (
           <div
-            key={video.id}
+            key={index}
             className="flex flex-col gap-2 text-white group cursor-pointer"
           >
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden">
+            <div className="relative w-full z-10 aspect-video rounded-lg overflow-hidden">
               <img
                 src={video.thumbnail}
                 alt="thumbnail"

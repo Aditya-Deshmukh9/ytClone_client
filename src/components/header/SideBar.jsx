@@ -4,11 +4,9 @@ import NavSection from "./NavSection";
 function SideBar({ isFulSidebar }) {
   return (
     <aside
-      className={`${
-        isFulSidebar ? "w-[14%]" : "w-[5%] px-4"
-      } h-screen fixed left-0 bg-[#0f0f0f] top-0 pt-14 transition-shadow duration-300 ease-in-out`}
+      className={`h-screen fixed left-0 md:left-1 bg-[#0f0f0f] z-40 top-0 pt-14 transition-shadow duration-300 ease-in-out`}
     >
-      <nav className="py-3">
+      <nav className={`py-3 ${isFulSidebar ? "" : "hidden md:block"}`}>
         <NavSection links={mainNavLinks} isFulSidebar={isFulSidebar} />
         {isFulSidebar && (
           <>

@@ -15,14 +15,32 @@
   }
 }
 
-.no-scrollbar {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .scroller {
+    scrollbar-color: gray black;
+  }
 }
 
-.scroller {
-  scrollbar-color: gray black;
+@layer components {
+  .btn {
+    @apply text-gray-300 border border-white px-4 py-1 rounded-3xl hover:bg-white hover:text-black;
+  }
+  .form-item {
+    @apply flex items-start flex-col justify-start;
+  }
+
+  .input-field {
+    @apply w-full px-3 text-gray-200 bg-gray-900 py-2 rounded-md border border-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500;
+  }
+  .label-text {
+    @apply text-sm text-gray-700 dark:text-gray-200 mr-2;
+  }
 }
